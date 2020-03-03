@@ -12,3 +12,15 @@ This is a node server to send bulk data into mParticle for Testing
 6) Optional: set the batch interval intSec [14]
 7) To start batching data, run:
    $ npm start
+
+## Configuring Your Own Events
+1) Update the events array in src > events.js to include addtional event objects with the following format:
+
+  {
+      "name" :"event_name",
+      "custom_attributes": {
+        "custom_attribute_1": "Attr 1",
+        "custom_attribute_1": "Attr 1",
+      },
+      "event_type" : mParticleEventTypes.transaction
+  }
