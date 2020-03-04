@@ -53,7 +53,7 @@ This is a locally hosted node server to send data into mParticle for Testing
 			}
          	}
 	]
-}
+	}
 ```
 *This event data will be forwarded to mParticle in addtion to being saved in a local DB for testing. 
 
