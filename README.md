@@ -29,32 +29,32 @@ This is a locally hosted node server to send data into mParticle for Testing
 		"googleAddID":"GoogleAddID"
 	},
 	"userAttributes":{
-		  "$age": 32,
-          "$gender": "M",
-          "$country": "USA",
-          "$zip": "10023",
-          "$city": "New York",
-          "$state": "NY",
-          "$address": "12 Sessame Street",
-          "$firstname": "Count",
-          "$lastname": "VonCount",
-          "$mobile": "(123)456-7890"
+		"$age": 32,
+          	"$gender": "M",
+          	"$country": "USA",
+          	"$zip": "10023",
+          	"$city": "New York",
+          	"$state": "NY",
+          	"$address": "12 Sessame Street",
+          	"$firstname": "Count",
+          	"$lastname": "VonCount",
+          	"$mobile": "(123)456-7890"
 	},
 	"events":[
 		{
-			"event_type": "other",
-			"data": {
-				"name": "Counting",
-				"custom_attributes": {
+		"event_type": "other",
+		"data": {
+			"name": "Counting",
+			"custom_attributes": {
         			"One": "Ah Ah Ah",
         			"Two": "Ah Ah Ah",
         			"Three": "Ah Ah Ah"
-               }
-            }
-         }
-      ]
-   }
-   ```
+               			}
+            		}
+         	}
+		]
+	}
+	```
 *This event data will be forwarded to mParticle in addtion to being saved in a local DB for testing. 
 
 ## To Enable Continuous S2S Data Flow
