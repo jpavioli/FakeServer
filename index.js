@@ -1,3 +1,7 @@
+//Enable Express and CORS
+const express = require('express')
+const cors = require ('cors')
+
 // Enable mParticle node SDK
 const mParticle = require('mparticle')
 
@@ -10,8 +14,6 @@ const events = require('./src/events.js')
 
 //Require DATA Model
 const Data = require('./models/Data.js')
-
-const intSec = 1 //Interval on time between batches
 
 // KEY / SECRET Constants
 const KEY = {
@@ -153,4 +155,17 @@ var logBatch = ()=> {
   api.uploadEvents(batch,callback)
 }
 
-var interval = setInterval(logBatch,1000*intSec)
+// // Iterate random batches
+// const intSec = 1 //Interval on time between batches
+// var interval = setInterval(logBatch,1000*intSec)
+
+// Post from Client Side
+const app = express()
+app.use(express.json())
+app.use(cors())
+
+app.use('/events', require('./routes/events'));
+
+// Local Host http://localhost:6969
+const port = 6969
+app.listen(port,() => {console.log(`I am listening at ${port}`)})
