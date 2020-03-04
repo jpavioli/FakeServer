@@ -4,8 +4,8 @@ const router = express.Router();
 // Enable mParticle node SDK
 const mParticle = require('mparticle')
 
-const S2S_KEY = "us1-0bc907d98717cc4ba6111506de0306ba"
-const S2S_SECRET = "B7FKbL4OsJmlvnSbYdb9RyWJqWjP3ThsTUvl9Hx9xTmlbQhL_rjEeTHGUJDVmP4L"
+const S2S_KEY = "us1-s2s key"
+const S2S_SECRET = "s2s secret"
 
 const Data = require('../models/Data')
 
