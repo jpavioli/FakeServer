@@ -11,7 +11,7 @@ This is a locally hosted node server to send data into mParticle for Testing
 5) Add your mParticle Keys and Secrets to routes/events.js
 6) Start your Server:
    $ npm start
-7) Client Side data can now be forwarded to this server via POST to http://localhost:6969/ with the following body:
+7) Client Side data can now be forwarded to this server via POST to http://localhost:6969/events/ with the following body:
    
    ```
    {
