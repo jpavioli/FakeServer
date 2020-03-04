@@ -74,6 +74,7 @@ This is a locally hosted node server to send data into mParticle for Testing
 ### Configuring Your Own Events
 1) Update the events array in src > events.js to include addtional event objects with the following format:
 
+```
   {
       "name" :"event_name",
       "custom_attributes": {
@@ -82,6 +83,7 @@ This is a locally hosted node server to send data into mParticle for Testing
       },
       "event_type" : mParticleEventTypes.transaction
   }
+```
   
 ## Accessing the local DB
 The local db being created by this server is built using sqlite3, a common viewer can be found here: https://sqlitebrowser.org/
