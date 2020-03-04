@@ -42,19 +42,19 @@ This is a locally hosted node server to send data into mParticle for Testing
 	},
 	"events":[
 		{
-		"event_type": "other",
-		"data": {
-			"name": "Counting",
-			"custom_attributes": {
-        			"One": "Ah Ah Ah",
-        			"Two": "Ah Ah Ah",
-        			"Three": "Ah Ah Ah"
-               			}
-            		}
+			"event_type": "other",
+			"data": {
+				"name": "Counting",
+				"custom_attributes": {
+					"One": "Ah Ah Ah",
+					"Two": "Ah Ah Ah",
+					"Three": "Ah Ah Ah"
+				}
+			}
          	}
-		]
-	}
-	```
+	]
+}
+```
 *This event data will be forwarded to mParticle in addtion to being saved in a local DB for testing. 
 
 ## To Enable Continuous S2S Data Flow
