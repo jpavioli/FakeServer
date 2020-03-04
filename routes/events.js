@@ -4,8 +4,8 @@ const router = express.Router();
 // Enable mParticle node SDK
 const mParticle = require('mparticle')
 
-const S2S_KEY = "ADD S2S KEY HERE"
-const S2S_SECRET = "ADD S2S SECRET HERE"
+const S2S_KEY = "us1-0bc907d98717cc4ba6111506de0306ba"
+const S2S_SECRET = "B7FKbL4OsJmlvnSbYdb9RyWJqWjP3ThsTUvl9Hx9xTmlbQhL_rjEeTHGUJDVmP4L"
 
 const Data = require('../models/Data')
 
@@ -38,17 +38,17 @@ router.post('/', (req, res) => {
           idfv: req.body.DeviceInformation.idfv ? req.body.DeviceInformation.idfv : null,
           androidID: req.body.DeviceInformation.androidID ? req.body.DeviceInformation.androidID : null,
           googleAddID: req.body.DeviceInformation.googleAddID ? req.body.DeviceInformation.googleAddID : null,
-          age: req.body.userAttributes.$age,
-          gender: req.body.userAttributes.$gender,
-          country: req.body.userAttributes.$contry,
-          zip: req.body.userAttributes.$zip,
-          city: req.body.userAttributes.$city,
-          state: req.body.userAttributes.$state,
-          address: req.body.userAttributes.$address,
-          firstname: req.body.userAttributes.$firstname,
-          lastname: req.body.userAttributes.$lastname,
-          mobile: req.body.userAttributes.$mobile,
-          eventcount: req.body.events.count
+          age: req.body.userAttributes.$age ? req.body.userAttributes.$age : null,
+          gender: req.body.userAttributes.$gender ? req.body.userAttributes.$gender : null,
+          country: req.body.userAttributes.$contry ? req.body.userAttributes.$contry : null,
+          zip: req.body.userAttributes.$zip ? req.body.userAttributes.$zip : null,
+          city: req.body.userAttributes.$city ? req.body.userAttributes.$city : null,
+          state: req.body.userAttributes.$state ? req.body.userAttributes.$state : null,
+          address: req.body.userAttributes.$address ? req.body.userAttributes.$address : null,
+          firstname: req.body.userAttributes.$firstname ? req.body.userAttributes.$firstname : null,
+          lastname: req.body.userAttributes.$lastname ? req.body.userAttributes.$lastname : null,
+          mobile: req.body.userAttributes.$mobile ? req.body.userAttributes.$mobile : null,
+          eventcount: req.body.events ? req.body.events.count : 0
       })
       .then(data => res.json(data))
       .catch(err => res.status(404).json({success:false}))

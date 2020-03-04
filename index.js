@@ -17,22 +17,16 @@ const Data = require('./models/Data.js')
 
 // KEY / SECRET Constants
 const KEY = {
-  web:'WEB KEY HERE',
-  ios:'IOS KEY HERE',
-  android:'ANDROID KEY HERE',
-  s2s:'S2S KEY HERE'
+  web:'us1-c9470f55cbef4d439641910609971e63',
+  ios:'us1-4b51275b57bd2c4ba8c0af568f1db1c7',
+  android:'us1-9a5904f7de141c468d8c826422878741',
+  s2s:'us1-0bc907d98717cc4ba6111506de0306ba'
 };
 const SECRET = {
-  web:'WEB SECRET HERE',
-  ios:'IOS SECRET HERE',
-  android:'ANDROID SECRET HERE',
-  s2s:'S2S SECRET HERE'
-}
-
-var stats = {
-  totalUsers: 0,
-  byIdentity: {},
-  byIdentityIdentity: {}
+  web:'wTKEvMCTBDjLZlVhgaESl9JV4Kp0oZSWl6LXJ-gBxBvdFCInpGH_1zBEWH5BtuNm',
+  ios:'MJIDlfbrhODv1nAqVgs3VISzMmDErR6cdTlmP_zyTANXLwTjxhlenHiD9sy5fHAl',
+  android:'WO0If0H_SLSTK7RExY2WE4lpHnrYiSbkKmuFSlwl6f0fDoUzvbJ6DjSZ_WgLT2p1',
+  s2s:'B7FKbL4OsJmlvnSbYdb9RyWJqWjP3ThsTUvl9Hx9xTmlbQhL_rjEeTHGUJDVmP4L'
 }
 
 var randomInfo = () => {
