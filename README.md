@@ -70,19 +70,6 @@ This is a locally hosted node server to send data into mParticle for Testing
 8) To start batching data, run:
    $ npm start
 
-## To Enable Continuous S2S Data Flow
-1) Make sure you have node installed on your local machine (https://nodejs.org/en/) 
-2) Clone the repository to your machiene using:
-   $ git clone <cloned url> 
-3) Navigate into the directory "FakeServer"
-4) Run:
-   $ npm install 
-5) Add your mParticle Keys and Secrets to index.js (comment out any not being used - in both: KEY [17], SECRET [23], and os [37])
-6) Uncomment the iterator [159-160]
-7) Optional: set the batch interval intSec [159]
-8) To start batching data, run:
-   $ npm start
-
 ### Configuring Your Own Events
 1) Update the events array in src > events.js to include addtional event objects with the following format:
 
